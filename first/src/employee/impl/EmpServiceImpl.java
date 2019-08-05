@@ -1,47 +1,52 @@
 package employee.impl;
 
+import java.util.List;
+
+import boader.model.Boader;
 import employee.model.EmpService;
 import employee.model.Employee;
 
-public class EmpServiceImpl implements EmpService {///잘못된 예시
+public class EmpServiceImpl implements EmpService {
+	EmpDAO dao = new EmpDAO();
 
 	@Override
-	public void registerEmp(Employee emp, Employee[] ary) {
-		for(int i =0; i<ary.length; i++) {
-			if(ary[i] ==null) {
-				ary[i]=emp;
-//				break;
-			}
-		}
-		
+	public Employee getEmployee(int empId) {
+		Employee emp = dao.getEmployee(empId);
+		return emp;
 	}
 
 	@Override
-	public void searchEmp(int empId, Employee[] ary) {
-		for(int i=0; i<ary.length; i++) {
-			if(ary[i] !=null && ary[i].getEmployeeId() == empId)
-				System.out.println(ary[i]);
-		}
-		
+	public List<Employee> getEmpList() {
+		return dao.getEmpList();
 	}
 
 	@Override
-	public void emplist(Employee[] ary) {
-		for(int i=0; i<ary.length; i++) {
-			System.out.println(ary[i]);
-		}
+	public List<Employee> getEmpList(String hireDate) {
+		return null;
 	}
 
 	@Override
-	public void removeEmp(int empId, int salary, Employee[] ary) {
+	public void insertEmp(Employee emp) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
-	public void delectEmp(int empId, Employee[] ary) {
+	public void updateEmp(int empId, int salary) {
 		// TODO Auto-generated method stub
-		
+
+	}
+
+	@Override
+	public void updateEmp(Employee emp) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteEmp(int empId) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
