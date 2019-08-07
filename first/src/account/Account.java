@@ -1,4 +1,4 @@
-package com.yedam.bjy;
+package account;
 
 public class Account {
 	 private String name;
@@ -14,7 +14,7 @@ public class Account {
 	public void deposit(int money) {
 		this.balance +=money;
 	}
-	public void withdraw(int money) {
+	void withdraw(int money) {
 		this.balance -=money;
 	}
 	void checkBalance() {

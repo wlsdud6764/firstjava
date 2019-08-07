@@ -1,18 +1,28 @@
-package com.yedam.bjy;
+package Exa.account;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+import Exa.account.Account;
+
+
+
 public class AccountExample {
-	Scanner sc = new Scanner(System.in);
-	Account[] acntAry = new Account[5];
-	int menu = 0;
-	Account acnt3 = null;
+	static Scanner sc = new Scanner(System.in);
+	static Account[] acntAry = new Account[5];
+	static int menu = 0;
+	static Account acnt3 = null;
 	
-void execute() {
-		while (true) {
+	
+ public static void main(String[] args) {
+	 List<String> list = new ArrayList<>();
+	 
+	 while (true) {
 
 			System.out.println("메뉴를 선택하세요. 1)신규  2)입금  3)출금  4)잔액  5)조회 6)종료");
-			menu = sc.nextInt();
+//			list.add(e)
+			 menu = sc.nextInt();
 			sc.nextLine();
 				if (menu == 1) 
 					creat();
@@ -33,8 +43,11 @@ void execute() {
 //							
 		} // wile
 	}// excute
+	 
+ 
+		
 	
-	void creat() {
+	 static void creat() {
 		
 			System.out.println("신규");
 			System.out.println("계좌번호를 입력하세요.");
@@ -52,7 +65,7 @@ void execute() {
 			}//for
 	}//1번 메소드
 	
-	void  deposit() {
+	static void  deposit() {
 			
 				System.out.println("입금");
 				System.out.println("계좌를 입력하세요");
@@ -77,7 +90,7 @@ void execute() {
 			} //2번 메소드
 
 	 
-	 void withdraw() {
+	 static void withdraw() {
 			System.out.println("출금");
 			System.out.println("계좌를 입력하세요");
 			String accNo = sc.nextLine();
@@ -92,11 +105,11 @@ void execute() {
 			} // for닫음
 		}//3번 메소드 닫음
 	 
-	 void checkBalance() {
+	 static void checkBalance() {
 			System.out.println("잔액");
 		}//4번메소드
 
-	 void allAccount() {
+	 static void allAccount() {
 			System.out.println("조회");
 			for (int i = 0; i < acntAry.length; i++) {
 				if (acntAry[i] != null)
@@ -104,9 +117,10 @@ void execute() {
 			}//for
 		}//5
 	 
-	 void exit() {
+	 static void exit() {
 		 System.out.println("종료");
 	 }
 	 
 	
 }// class
+

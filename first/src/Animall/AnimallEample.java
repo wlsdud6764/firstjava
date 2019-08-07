@@ -1,3 +1,4 @@
+
 package Animall;
 abstract class Animall{
 //	추상클래스

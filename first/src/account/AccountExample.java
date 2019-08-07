@@ -1,6 +1,10 @@
-package com.yedam.bjy;
+package account;
 
 import java.util.Scanner;
+
+import com.yedam.bjy.Account;
+
+
 
 public class AccountExample {
 	Scanner sc = new Scanner(System.in);

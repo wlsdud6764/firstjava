@@ -47,4 +47,9 @@ public class Employee {
 		this.departmentId = departmentId;
 	}
 
+	public String getHireDate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

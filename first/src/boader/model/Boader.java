@@ -2,19 +2,10 @@ package boader.model;
 
 public class Boader {//게시물
 	int bdrno;//게시물번호
-	int orgno;
+	int orgno;//댓글	번호
 	String title;
 	String contents;
-	String userId;
-	
-	public Boader(int bdrno, int orgno, String title, String contents, String userId) {
-		super();
-		this.bdrno = bdrno;
-		this.orgno = orgno;
-		this.title = title;
-		this.contents = contents;
-		this.userId = userId;
-	}
+	String creatdate;
 	public int getBdrno() {
 		return bdrno;
 	}
@@ -39,20 +30,7 @@ public class Boader {//게시물
 	public void setContents(String contents) {
 		this.contents = contents;
 	}
-	public String getUserId() {
-		return userId;
-	}
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "번호"+ bdrno + "아이디: " + userId + "제목 : " + title  +  "내용 "  + contents;
-	}
 	
-
-
-
+	
 	}
 	
