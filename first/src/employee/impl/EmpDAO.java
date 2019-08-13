@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import co.yedam.app.co.model.Employee;
 import employee.common.DAO;
-import employee.model.Employee;
 
 public class EmpDAO {
 	PreparedStatement pstmt = null;

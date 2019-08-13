@@ -2,6 +2,7 @@ package co.yedam.app.dept;
 
 import java.util.List;
 
+
 public interface DeptDAO {
 
 	// 등록

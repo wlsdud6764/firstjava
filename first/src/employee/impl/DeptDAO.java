@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.Map;
 import java.util.TreeMap;
 
+import co.yedam.app.co.model.Employee;
 import employee.common.DAO;
-import employee.model.Employee;
 
 public class DeptDAO {
 	public void getMemberByDept(Employee emp) throws SQLException {

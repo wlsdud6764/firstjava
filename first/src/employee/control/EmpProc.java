@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
+import co.yedam.app.co.model.Employee;
 import employee.impl.DeptDAO;
 import employee.impl.EmpServiceImpl;
 import employee.model.EmpService;
-import employee.model.Employee;
 
 public class EmpProc {
 	EmpService service = new EmpServiceImpl();

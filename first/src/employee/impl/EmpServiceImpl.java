@@ -3,8 +3,8 @@ package employee.impl;
 import java.util.List;
 
 import boader.model.Boader;
+import co.yedam.app.co.model.Employee;
 import employee.model.EmpService;
-import employee.model.Employee;
 
 public class EmpServiceImpl implements EmpService {
 	EmpDAO dao = new EmpDAO();

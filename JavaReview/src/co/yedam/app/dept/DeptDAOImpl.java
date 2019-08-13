@@ -1,15 +1,16 @@
 package co.yedam.app.dept;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import co.yedam.app.common.DAO;
+import co.yedam.app.dept.DeptDAO;
 
 
 
-public class DeptDAOImpl extends DAO implements DeptDAO {// 여기서 구현
+public class DeptDAOImpl extends DAO implements DeptDAO {// 여기서구현
 	// sigletone
 	private static DeptDAOImpl instance = new DeptDAOImpl();// deparments
 

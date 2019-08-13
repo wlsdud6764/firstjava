@@ -3,6 +3,7 @@ package employee.model;
 import java.util.List;
 
 import boader.model.Boader;
+import co.yedam.app.co.model.Employee;
 
 public interface EmpService {
 	// 한건조회.

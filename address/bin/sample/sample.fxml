@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<!-- <?import sample.Person ?> -->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  
+            fx:controller="sample.Controller">
+   <top>
+      <Label text="주소록" BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets left="15.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TableView fx:id="tableView" prefHeight="302.0" prefWidth="407.0" BorderPane.alignment="CENTER" onMouseClicked="#getInformation">
+        <columns>
+          <TableColumn maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="100.0" text="성" fx:id="firstName">
+             <cellValueFactory>
+                <PropertyValueFactory property="firstName" />
+             </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="1.7976931348623157E308" prefWidth="100.0" text="이름" fx:id="lastName">
+             <cellValueFactory>
+                <PropertyValueFactory property="lastName" />
+             </cellValueFactory>
+          </TableColumn>
+            <TableColumn maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="200.0" text="이메일 주소" fx:id="email">
+               <cellValueFactory>
+                  <PropertyValueFactory property="email" />
+               </cellValueFactory>
+            </TableColumn>
+           <TableColumn maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="100.0" text="휴대폰" fx:id="phone">
+              <cellValueFactory>
+                 <PropertyValueFactory property="phone" />
+              </cellValueFactory>
+           </TableColumn>
+        </columns>
+         <BorderPane.margin>
+            <Insets left="15.0" right="15.0" top="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="firstNameField" prefWidth="90.0" promptText="성" />
+            <TextField fx:id="lastNameField" prefWidth="90.0" promptText="이름" />
+            <TextField fx:id="emailField" prefWidth="150.0" promptText="이메일 주소">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="phoneField" prefWidth="150.0" promptText="전화번호" />
+            <HBox spacing="10.0" >
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addPerson" text="추가" />
+                  <Button mnemonicParsing="false" onAction="#delPerson" text="삭제" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="15.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
+

@@ -10,8 +10,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import boader.model.Boader;
+import co.yedam.app.co.model.Employee;
 import employee.common.DAO;
-import employee.model.Employee;
 
 public class UserDAO {
 	public void getMemberByDept(Boader bdr) throws SQLException {

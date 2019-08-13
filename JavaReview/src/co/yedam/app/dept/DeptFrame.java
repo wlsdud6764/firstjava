@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 
+
 public class DeptFrame {
 	Scanner sc = new Scanner(System.in);
 	DeptDAOImpl deptdao = new DeptDAOImpl();
