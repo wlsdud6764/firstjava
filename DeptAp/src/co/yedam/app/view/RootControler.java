@@ -1,5 +1,6 @@
 package co.yedam.app.view;
 
+
 import java.io.File;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -162,8 +163,6 @@ public class RootControler implements Initializable {
 		try {
 			Popup popup = new Popup();
 			popup.setAutoHide(true);
-//			popup.setX(300);
-//			popup.setY(200);
 			AnchorPane loginView = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
 			popup.getContent().add(loginView);
 			ImageView img = (ImageView) loginView.lookup("#img");
